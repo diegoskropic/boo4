@@ -9,9 +9,34 @@
 .contenedor {
     width: 80%;
     height: 500px;
-    background: #FF9C29;
+    background: #ff9c29;
     margin: 50px auto;
+    /* El rollo de flex */
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*para respetar los anchos/altos*/
+    justify-content: space-around;
+    /*also center, flex-start, flex-end
+        space-between(agrega margenes iguales entre los contenedores/objetos para ocupar todo el ancho (potea)
+        space-around add margenes iguales entre objetos y al inicio final del 1ro/ultimo potea*/
+    align-items: baseline;
+    /*solo funciona cuando hay una linea de contenido en los objetos/*
+        /*flex-end also CENTER!!!! algo imposible en css sin JS o Jquery
+        stretch, para que ocupen todo el alto disponible, estirandose
+        baseline, le pones a algun elemento un font-size mayor a los otros y alinea todo a la base del texto
+        */
+}
+
+.containeer {
+    width: 80%;
+    height: 500px;
+    background: #ff9c29;
+    margin: 50px auto;
+    /* El rollo de flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*para respetar los anchos/altos*/
+    align-content: initial;
 }
 
 .hijo {
@@ -23,4 +48,22 @@
     padding: 20px;
     font-size: 40px;
     text-align: center;
+}
+
+.son {
+    background: #008285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* para el baseline */
+
+.otro {
+    font-size: 60px;
 }
