@@ -1,0 +1,33 @@
+
+
+.borde{
+    border: 1px #000 solid;
+    text-align: center;
+    height: 35px;
+}
+.color1{
+    background: #929bb409;
+    height: 25px;
+}
+.color2{
+    background: #cf0808d7;
+    height: 25px;
+}
+.color3{
+    background: #fbff00;
+}
+.color4{
+    background: #2ac5a4;
+    height: 105px;
+}
+.color5
+{
+    background: #028d41;
+    /* height: 15px; */
+}
+.color6{
+    background: #00fff2;
+}
+.color7{
+    background: #ff0037;
+}

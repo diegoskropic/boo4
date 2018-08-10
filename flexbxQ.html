@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbax | WCDev</title>
+    <link rel="stylesheet" href="css/estyle.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <section class="container-fluid">
+        
+    </section>
+    <div class="container">
+        <h1>Alineamientos:</h1>
+    </div>
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center"> <!-- *** parece solo jalar en rows -->
+            <!-- ***Lo que era imposible con CSS align-items-center y justify-content-center -->
+            <div class="borde color3 col-1 align-self-start">1</div>
+            <div class="borde color3 col-1 align-self-center">2</div>
+            <div class="borde color3 col-1 align-self-start">3</div>
+            <div class="borde color3 col-1 align-self-end">4</div>
+            <div class="borde color3 col-1 align-self-center">5</div>
+            <div class="borde color3 col-1 align-self-end">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row color1 align-self-center align-items-center justify-content-center">color1 w/justify-content-between</div>        
+    </div>
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center justify-content-between"> 
+            <div class="borde color3 col-1 ">A</div>
+            <div class="borde color3 col-1 ">B</div>
+            <div class="borde color3 col-1 ">C</div>
+            <div class="borde color3 col-1 ">D</div>
+            <div class="borde color3 col-1 ">E</div>
+            <div class="borde color3 col-1 ">F</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row color2 align-self-center align-items-center justify-content-center">color2 w/justify-content-around</div>
+    </div>    
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center justify-content-around"> 
+            <div class="borde color3 col-1 ">IX</div>
+            <div class="borde color3 col-1 ">X</div>
+            <div class="borde color3 col-1 ">XI</div>
+            <div class="borde color3 col-1 ">IV</div>
+            <div class="borde color3 col-1 ">V</div>
+            <div class="borde color3 col-1 ">VI</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row color1 align-self-center align-items-center justify-content-center">color1 order-n</div>        
+    </div>    
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center"> 
+            <div class="borde color3 col-1 order-3">1</div>
+            <div class="borde color3 col-1 order-4">2</div>
+            <div class="borde color3 col-1 order-1">3</div>
+            <div class="borde color3 col-1 order-5">4</div>
+            <div class="borde color3 col-1 order-2">5</div>
+            <div class="borde color3 col-1 order-6">6</div>
+        </div>
+    </div>
+    <div class="container"> 
+        <div class="row color2 align-self-center align-items-center justify-content-center">color2 mds and offsets</div>
+    </div>    
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center"> <!-- *** -->
+            <!-- ***Lo que era imposible con CSS align-items-center y justify-content-center -->
+            <div class="borde color3 col-1 col-lg-4">1 col-xs-4</div>
+            <div class="borde color3 col-1 col-lg-4 offset-lg-4">2 col-md-4 offset-md-4"</div>
+            <!-- en teoría deben estar en la segunda línea y de manera centrada las columnas 3 4 5 y 6
+            en los espacios 5 al 8 de los 12 disponibles puesto que están centrados en el row que los contiene
+            pero se recorren xq la 6 tiene offset 3 (recorre 3 columnas de izq a der y la 3 ocupa 2 espacios 
+            porque tiene col-md-2 quedando 4 espacios libres de los 12 disponibles 2 a cada orilla xq debe 
+            centrarse el contenido-->
+            <div class="borde color3 col-1 col-lg-2">3 colmd2</div> <!-- col-md-2 -->
+            <div class="borde color3 col-1 ">4</div>
+            <div class="borde color3 col-1 ">5</div>
+            <div class="borde color3 col-1 offset-lg-3">6 osmd3</div>  <!-- offset-md-3 -->      
+        </div>
+    </div>  
+    <div class="container">
+        <h1>Nesting:</h1>
+    </div>
+    <div class="container">
+        <div class="row color4 justify-content-center align-items-center"> <!-- *** -->
+            <!-- ***Lo que era imposible con CSS align-items-center y justify-content-center -->
+            <div class="borde color3 col-2 ">1</div>
+            <div class="borde color3 col ">2
+                <div class="row">
+                    <div class="col color5 ">col1</div>
+                    <div class="col color6 ">col2</div>
+                    <div class="col color7 ">col3</div>
+                </div>
+            </div>
+            <div class="borde color3 col-2 ">3</div>
+            <div class="borde color3 col-1 ">4</div>
+            <div class="borde color3 col-1 ">5</div>
+            <div class="borde color3 col-2 ">6</div>
+        </div>
+    </div>
+    <div class="container">
+            <h1>Turu:</h1>
+        </div>
+</body>
+</html>
